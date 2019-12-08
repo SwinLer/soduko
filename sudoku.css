@@ -1,0 +1,75 @@
+body{
+    background-color: #CCFFCC;
+}
+.game-table{
+    text-align: center;
+    table-layout: fixed;
+    width: 510px;
+    height: 510px;
+    background-color: #336666;
+    border: 0;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+tr{
+    vertical-align: middle;
+    border: 1px;
+    border-color: black;
+}
+
+.td-cell{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 0;
+    border-radius: 2px;
+    background-color: #6699CC;
+}
+
+.cell-input{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #336666;
+    background-color: #99CCCC;
+}
+
+.game-repeat{
+    color: #FF3300;
+}
+
+.game-success{
+    color: #009933;
+}
+
+.game-fail{
+    color: #FF0000;
+}
+
+.grade{
+    padding: 10px;
+}
+
+
+.update-button{
+    text-align: center;
+    background-color: #003333;
+    color: white;
+    outline: 0;
+}
+
+.start-button{
+    text-align: center;
+    background-color: #003333;
+    color: white;
+    outline: 0;
+}
+
+.buttons{
+    margin: 10px;
+}

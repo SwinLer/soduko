@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Sudoku</title>
+        <link rel="stylesheet" type="text/css" href="sudoku.css">
+    </head>
+    <body>
+        <div align="center">
+
+            <!--游戏结果显示-->
+            <div>
+                <p id="alert-field" class="alert-field"></p>
+            </div>
+
+            <!--计时时间显示-->
+            <div align="center" id="time-field" class="time-field">
+                <p id="time-tip" class="time-tip">00:00:00</p>
+            </div>
+
+            <!--开始按钮控制-->
+            <div class="buttons">
+                <div align="center" id="button-group" class="button-group">
+                    <input type="button" value="Update Map" onclick="updateGameTable()" class="update-button">
+                    <input type="button" value="Start Game" onclick="clock.start()" class="start-button">
+                 </div>
+            </div>
+            
+
+            <!--数独游戏表格-->
+            <div align="center" id="game-field" class="game-field">
+                <table align="center" id="game-table" class="game-table" boarder="1">
+
+                </table>       
+            </div>
+            
+            <!--等级按钮控制-->
+            <div align="center" id="grade" class="grade">
+                <input type="radio" name="d-grade" value="easy" onclick="setDifficuty(1)" checked="checked">Easy
+                <input type="radio" name="d-grade" value="normal" onclick="setDifficuty(2)">Normal
+                <input type="radio" name="d-grade" value="hard" onclick="setDifficuty(3)">Hard
+            </div>
+        </div>
+            
+        <script src="bean.js"></script>
+        <script src="sudoku.js"></script>
+    </body>
+</html>
